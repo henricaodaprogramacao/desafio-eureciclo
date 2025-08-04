@@ -1,57 +1,24 @@
 # Desafio 2
 
-Este projeto resolve o problema de encontrar a melhor combinação de garrafas para preencher um galão de forma otimizada, com base no volume informado.  
-A aplicação foi desenvolvida em Python e pode ser executada totalmente dentro de um container Docker.
-
----
-
-## Estrutura do projeto
-
-```
-desafio-eureciclo/
-│
-├── desafio2/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── main.py
-│   │   └── logic.py
-│   ├── tests/
-│   │   └── test_logic.py
-│   └── README.md
-│
-├── .github/workflows/
-│   └── pipeline.yml
-│
-├── Dockerfile
-├── requirements.txt
-└── .dockerignore
-```
-
----
-
 ## Requisitos
 
 - [Docker](https://docs.docker.com/get-docker/) instalado na máquina.
 
 ---
 
-## Como construir a imagem
+## Como executar com Docker
 
-No diretório raiz do projeto, execute:
+1. Construa a imagem:
 
-```bash
-docker build -t desafio-galao .
-```
+   ```bash
+   docker build -t desafio-galao .
+   ```
 
----
+2. Execute o container:
 
-## Como executar a aplicação
-
-Para rodar a aplicação e calcular a melhor combinação de garrafas:
-
-```bash
-docker run --rm desafio-galao python -m desafio2.app.main --galao 7 --garrafa 4.5 --garrafa 1.5
-```
+   ```bash
+   docker run --rm desafio-galao python -m desafio2.app.main --galao 7 --garrafa 4.5 --garrafa 1.5
+   ```
 
 ### Exemplo de saída:
 
