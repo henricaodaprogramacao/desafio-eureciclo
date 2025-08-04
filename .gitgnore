@@ -1,3 +1,28 @@
-__pycache__/
-*.pyc
-.venv/
+# Ambientes virtuais
+
+desafio1/venv/
+desafio2/venv/
+
+# Cache do Python
+
+**pycache**/
+_.pyc
+_.pyo
+
+# Logs
+
+\*.log
+
+# Cache de testes
+
+.pytest_cache/
+
+# Configurações do editor
+
+.vscode/
+.idea/
+
+# Arquivos do sistema
+
+.DS_Store
+Thumbs.db
